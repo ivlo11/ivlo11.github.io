@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up a GitHub blog with Jekyll"
 date:   2015-11-08 19:57:32 -0800
-categories: jekyll github
+categories: blog
 ---
 ## Steps
 1. Create a USERNAME.github.io repository in your GitHub account where USERNAME is your GitHub username (ex: ivlo11.github.io)
@@ -19,7 +19,6 @@ categories: jekyll github
 
       ```bash
       $ \curl -sSL https://get.rvm.io | bash -s stable --ruby
-      $ source /Users/Ivonne/.rvm/scripts/rvm
       $ rvm install ruby-2.2-head
       $ rvm use ruby-2.2-head
       $ ruby -v
@@ -36,8 +35,8 @@ categories: jekyll github
 
    ```bash
    $ cd ~/Development/
-   $ jekyll new ivlo11.github.io
-   $ cd ivlo11.github.io/
+   $ jekyll new USERNAME.github.io
+   $ cd USERNAME.github.io/
    ```
 
 7. now you can run jekyll serve
@@ -56,9 +55,9 @@ categories: jekyll github
      all the pieces together and suddenly realizing, you’ve only 
      scratched the surface of how awesome the project could really be.
    baseurl: "" # the subpath of your site, e.g. /blog
-   url: "http://ivlo11.github.io" # the base hostname & protocol for your site
-   twitter_username: ivlo11
-   github_username:  ivlo11
+   url: "http://USERNAME.github.io" # the base hostname & protocol for your site
+   twitter_username: USERNAME
+   github_username:  USERNAME
 
    # Build settings
    markdown: kramdown
