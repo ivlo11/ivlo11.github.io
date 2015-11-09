@@ -86,6 +86,7 @@ categories: jekyll github
     $ git add .
     $ git commit -m 'Initial commit'
     $ git remote add origin git@github.com:USERNAME/USERNAME.github.io.git
+    $ git pull origin master
     $ git push origin master
     ```
 
