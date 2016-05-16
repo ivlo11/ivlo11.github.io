@@ -4,10 +4,15 @@ title: About
 permalink: /about/
 ---
 
-I am a software engineer who drives sales through innovative solutions for eCommerce applications. My expertise is in enhancing customer experience, improving site responsiveness, problem identification and resolution, project delivery from inception through implementation, and releasing mission-critical changes to production environments.
+I am a Software Engineer who drives conversions through innovative solutions for web applications. Expertise in enhancing customer experience, improving site responsiveness, project delivery from inception through implementation, releasing mission-critical changes to production environments.
 
-I have an insatiable desire to learn. I love new, unknown and unconquered projects. I love the feeling of hacking away at something and in the end solving the puzzle, putting all the pieces together and suddenly realizing, you’ve only scratched the surface of how awesome the project could really be. In the words of Voltaire:
+**Qualifications**
 
->"The more I read, the more I acquire, the more certain I am that I know nothing."
+  * Recognized as a key player in a development team of senior engineers
+  * Excel at finding solutions for complex problems and pushing the boundaries of technology to achieve this goal
+  * Mentor other developers on our platform, as well as related technologies.
+  * Go-getter attitude with an insatiable desire to learn and meet the needs of the business.
 
-My weapons of choice: Java, C++, Python, JavaScript, HTML, CSS, jQuery, JSON, XML, PostgreSQL, Apache Tomcat, Linux, Subversion
+Core Technologies: Java, JUnit, Selenium, JSP, SQL, JavaScript, AngularJS, jQuery, AJAX, JSON, XML, HTML, CSS, Jasmine, Protractor, Apache Tomcat, Linux, Python, C++, Perforce, Git, Subversion.
+
+Applications: Eclipse IDE, Jira, FishEye & Crucible, Confluence, Adobe Photoshop, Illustrator, InDesign, and Dreamweaver, Microsoft Word, Excel and PowerPoint.
