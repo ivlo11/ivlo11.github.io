@@ -4,15 +4,38 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  {% assign page = site.posts.first %}
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    </header>
+
+    <div id="post-excerpt" class="fade-bottom" style="mask: url(#fade_bottom_svg_mask)" itemprop="articleBody">
+      {{ page.excerpt }}
+    </div>
+    <svg height="0">
+      <mask id="fade_bottom_svg_mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+        <linearGradient y2="1" x1="0" x2="0" y1="0" id="fade_bottom_svg_gradient" gradientUnits="objectBoundingBox">
+          <stop offset="0.35" stop-color="white" stop-opacity="1"></stop>
+          <stop stop-color="white" stop-opacity="0" offset="1"></stop>
+        </linearGradient>
+        <rect x="0" y="0" width="1" height="1" fill="url(#fade_bottom_svg_gradient)"></rect>
+      </mask>
+    </svg>
+    <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">Read more...</a>
+  </article>
+
+  <hr>
+
+  <h1 class="page-heading">Previous Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts offset:1 %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}<span class="post-meta"> - {{ post.date | date: "%b %-d, %Y" }}</span></a>
         </h2>
       </li>
     {% endfor %}
